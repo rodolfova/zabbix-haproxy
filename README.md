@@ -2,12 +2,19 @@
 Come settare zabbix con haproxy mariadb cluster frontend e backend separati
 
 Settare il cluster di mariadb con haproxy usando source come bilanciatore (ip da usare sia per il backend che frontend)
+
 es:
+
 frontend mariadb-front-sticky
+
   mode tcp
+  
   option  tcplog
+  
   bind 192.168.xxx.214:3306
+  
   default_backend mariadb-back-sticky
+  
 
 
 backend mariadb-back-sticky
