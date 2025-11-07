@@ -6,13 +6,9 @@ Settare il cluster di mariadb con haproxy usando source come bilanciatore (ip da
 es:
 
 frontend mariadb-front-sticky
-
-  mode tcp
-  
+  mode tcp <br />
   option  tcplog
-  
   bind 192.168.xxx.214:3306
-  
   default_backend mariadb-back-sticky
   
 
