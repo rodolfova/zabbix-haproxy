@@ -70,9 +70,9 @@ $DB['TYPE']                     = 'MYSQL';<br />
 $DB['SERVER']                   = '192.168.xxx.214';v
 
 
-#nel file zabbix.conf.php usare questi valori<br />
-$ZBX_SERVER                     = '192.168.xxx.215'; #-> vip da haproxy per il controllo del backend di zabbix<br />
-$ZBX_SERVER_PORT                = '10051';<br />
+#nel file zabbix.conf.php commentare queste voci, verranno lette dal db<br />
+\\\$ZBX_SERVER  
+\\\$ZBX_SERVER_PORT
 
 #nel zabbix_server.conf indirizzo ip del db<br />
 DBHost=192.168.xxx.214<br />
